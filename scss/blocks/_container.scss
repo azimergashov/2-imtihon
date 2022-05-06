@@ -1,6 +1,39 @@
 .container {
   width: 100%;
-  max-width: 1157px;
+  max-width: 1146px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
+// CONTAINER
+@media only screen and (max-width: 1440px){
+  .container {
+    max-width: 1352px;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .container {
+    max-width: 100%;
+  }
+}
+
+//CONTAINER

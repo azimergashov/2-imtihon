@@ -1,0 +1,120 @@
+.siteheader{
+    position: relative;
+    padding: 34px  0;
+    width: 100%;
+    &__container{
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__right{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 58px;
+        justify-content: space-between;
+    }
+
+    &__link{
+        display: inline-block;
+    }
+
+    &__button{
+        display: none;
+        background-color: white;
+    }
+
+}
+
+@media only screen and (max-width: 1440px){
+    .container {
+      max-width: 1352px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px){
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  @media only screen and (max-width: 992px){
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @media only screen and (max-width: 768px){
+    .container {
+      max-width: 100%;
+    }
+
+  }
+
+  @media only screen and (max-width: 623px){
+
+    .siteheader{
+        &__button{
+            margin-top: 10px;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: none;
+            background-image: url("../images/hamburger-menu.svg");
+            background-repeat: no-repeat;
+        }
+
+        &__right{
+            display: none;
+        }
+        &__logo{
+            margin: 0 auto;
+        }
+
+    }
+
+    .siteheader--open .siteheader__button{
+        background-image: url("../images/X-exit.svg");
+    }
+    .siteheader--open .siteheader__right{
+
+        background-color: #333A44;
+        padding: 32px;
+        width: 70%;
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        left: -58px;
+        flex-direction: column;
+    }
+
+    .siteheader--open .sitenav__list{
+        flex-direction: column;
+        margin-left: -32px;
+        margin-top: 40px;
+        margin-bottom: 339px;
+    }
+    .siteheader--open .sitenav__link{
+        margin-top: 40px;
+        display: block;
+        margin: 0px;
+    }
+
+    .siteheader--open .nav--link{
+        margin-left: 32px;
+    }
+
+    .siteheader--open .button{
+        border: solid 2px #FCB72B;
+    }
+
+  }
+
+  @media only screen and (max-width:425px){
+      .siteheader__logo{
+        width: 75px;
+        height: 20px;
+
+      }
+  }

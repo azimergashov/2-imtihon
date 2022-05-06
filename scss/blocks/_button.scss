@@ -1,0 +1,25 @@
+.button{
+    text-decoration: none;
+    background-color: #FCB72B;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    border: solid 2px #FFFFFF;
+}
+
+.button:hover{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FCB72B;
+    border: solid 2px #FCB72B;
+    background-color: #FFFFFF;;
+}

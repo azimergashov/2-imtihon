@@ -1,0 +1,55 @@
+.sitenav{
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    &__link{
+        display: inline-block;
+        text-decoration: none;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+    &__link:hover{
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FCB72B;
+        transition: all 0.7s;
+        opacity: 0.5;
+    }
+
+    &__link{
+        opacity: 1;
+        transition: all 0s;
+    }
+
+    &__link + &__link{
+        margin-left: 32px;
+    }
+
+}
+
+@media only screen and (max-width:596px){
+    .sitenav__list{
+        flex-direction: column;
+        display: block;
+    }
+
+    .sitenav__link{
+        margin: 0;
+    }
+
+    &__link + &__link{
+        margin-left: 0px;
+    }
+}

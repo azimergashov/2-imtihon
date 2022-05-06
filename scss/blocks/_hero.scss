@@ -1,0 +1,177 @@
+.hero{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url("../images/hero-bacgraund1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    &__container{
+        padding: 153px 0;
+        width: 100%;
+        height: 600px;
+        position: relative;
+    }
+
+    &__line-left{
+        position: absolute;
+        left: -168px;
+        top: 354px;
+    }
+    &__left{
+        max-width: 500px;
+        width: 100%;
+    }
+    &__heading{
+        margin: 0;
+        padding: 0;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+    }
+
+
+    &__desc{
+        max-width: 405px;
+        margin: 0;
+        margin-left: 80px;
+        margin-top: 40px;
+        padding: 0;
+        margin-bottom: 40px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+
+    &__button{
+        border: solid 2px #FCB72B;
+        margin-left: 80px;
+
+    }
+
+    &__button:hover{
+        background-image: url("../images/hero-bacgraund1x.png");
+        background-size: auto;
+    }
+    &__line-right{
+        position: absolute;
+        left: 500px;
+        top: 355px;
+    }
+
+}
+
+
+@media only screen and (max-width:993px){
+    .hero{
+        min-height: 650px;
+        background-image: url("../images/hero-backgraund-tablet1x.png");
+        &__container{
+            padding: 137px 100px;
+            padding-top: -90px;
+
+        }
+        &__left{
+            margin-bottom: 100px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__desc{
+            margin-left: 0;
+            text-align: center;
+            max-width: 500px;
+        }
+        &__button{
+            margin-left: 0;
+        }
+        &__line-left{
+            display: none;
+        }
+        &__line-right{
+            left: -200px;
+            top: 473px;
+        }
+
+    }
+}
+@media only screen and (max-width:704px){
+    .hero__line-right{
+        top: 400px;
+        left: -270px;
+    }
+
+    .hero__container{
+        padding: 115px 40px;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .hero{
+        &__container{
+            padding: 115px 32px;
+        }
+        &__left{
+            text-align: center;
+        }
+        &__heading{
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+        &__desc{
+            font-size: 15px;
+            line-height: 25px;
+        }
+        &__line-right{
+            top: 448px;
+            left: -200px;
+        }
+    }
+}
+@media only screen and (max-width:425px){
+    .hero{
+        background-image: url("../images/hero-backgraund-mobile1x.png");
+    }
+    .hero__line-right{
+        top: 478px;
+        left: -270px;
+    }
+}
+@media only screen and (max-width:345px){
+    .hero__line-right{
+        display: none;
+    }
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .hero{
+      background-image: url("../images/hero-bacgraund2x@2x.png");
+
+  }
+  @media only screen and (max-width:993px){
+      .hero{
+        background-image: url("../images/hero-backgraund-tablet2x@2x.png");
+      }
+  }
+
+  @media only screen and(max-width:425px){
+    .hero{
+        background-image: url("../images/hero-backgraund-mobile1x.png");
+    }
+  }
+}

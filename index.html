@@ -4,35 +4,120 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.min.css">
   <title>2-imtihon</title>
 </head>
-<body>
+<body class="body">
+
   <!-- HEADER -->
-  <header class="siteheader">
-    <div class="container">
-      <a class="siteheader__logo" href=""> <img class="siteheader__logo-img" src="" alt=""> </a>
-      <nav class="siteheader__nav">
-        <ul class="siteheader__nav-list">
-          <li class="siteheader__nav-item">
-            <a class="siteheader__nav-link" href="#"></a>
-          </li>
-        </ul>
-      </nav>
+  <header class="siteheader siteheader--open">
+    <div class="container siteheader__container">
+      <button class="siteheader__button"></button>
+      <a class="siteheader__logo" href="#"> <img class="siteheader__logo-img" src="./images/header-logo.svg" alt="" width="108" height="29"> </a>
+
+      <div class="siteheader__right">
+        <!-- SITENAV -->
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+
+              <a class="sitenav__link nav--link" href="#">About</a>
+              <a class="sitenav__link " href="#">Location</a>
+              <a class="sitenav__link " href="#">Careers</a>
+
+            </li>
+          </ul>
+        </nav>
+
+        <a class="button siteheader__link" href="#">Get Scootin</a>
+      </div>
+
+
+
     </div>
   </header>
   <!-- HEADER-END -->
+
   <!-- MAIN -->
   <main class="sitemain">
-    <div class="container">
-      <!-- HERO -->
-      <section class="hero">
-        <div class="hero-container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__container">
+
+          <img class="hero__line-left" src="./images/line-hero.svg" alt="" width="202" height="10">
+
+          <div class="hero__left">
+
+            <h1 class="hero__heading">
+              Scooter sharing made simple
+            </h1>
+
+            <p class="hero__desc">
+              Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
+            </p>
+
+            <a class="button hero__button" href="#" >Get Scootin</a>
+
+          </div>
+
+          <img class="hero__line-right" src="./images/strelka-hero.svg" alt="" width="447" height="138">
 
         </div>
-      </section>
-      <!-- HERO-END -->
-    </div>
+      </div>
+    </section>
+    <!-- HERO-END -->
+
+    <!-- OUR-SERVICE -->
+    <section class="our-service">
+      <div class="container">
+        <div class="our-service__container">
+          <ul class="our-service__list">
+
+            <li class="our-service__item">
+              <img class="our-service__img" src="./images/our-service-phone.svg" alt="" width="96" height="96">
+
+              <h2 class="our-service__heading">Locate with app</h2>
+
+              <p class="our-service__desc">
+                Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.
+              </p>
+            </li>
+
+            <li class="our-service__item">
+              <img class="our-service__img" src="./images/our-service-scooter.svg" alt="" width="96" height="96">
+
+              <h2 class="our-service__heading">Pick your scooter</h2>
+
+              <p class="our-service__desc">
+                We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.
+              </p>
+            </li>
+
+            <li class="our-service__item">
+              <img class="our-service__img" src="./images/our-service-riding.svg" alt="" width="96" height="96">
+
+              <h2 class="our-service__heading">Enjoy the ride</h2>
+
+              <p class="our-service__desc">
+                Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.
+              </p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </section>
+    <!-- OUR-SERVICE-END -->
+
+
+
+
   </main>
   <!-- MAIN-END -->
   <!-- FOOTER -->
@@ -40,5 +125,7 @@
     <div class="container"></div>
   </footer>
   <!-- FOOTER-END -->
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
