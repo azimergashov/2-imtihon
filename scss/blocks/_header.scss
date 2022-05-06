@@ -78,7 +78,7 @@
         background-image: url("../images/X-exit.svg");
     }
     .siteheader--open .siteheader__right{
-
+        z-index: 4;
         background-color: #333A44;
         padding: 32px;
         width: 70%;
@@ -107,6 +107,11 @@
 
     .siteheader--open .button{
         border: solid 2px #FCB72B;
+    }
+
+    .siteheader--open .hero{
+      position: static;
+
     }
 
   }

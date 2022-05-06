@@ -4,18 +4,19 @@
     background-image: url("../images/hero-bacgraund1x.png");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 
 
     &__container{
         padding: 153px 0;
         width: 100%;
         height: 600px;
-        position: relative;
+
     }
 
     &__line-left{
         position: absolute;
-        left: -168px;
+        left: 0;
         top: 354px;
     }
     &__left{
@@ -62,10 +63,32 @@
     }
     &__line-right{
         position: absolute;
-        left: 500px;
+        left: 700px;
         top: 355px;
     }
 
+}
+@media only screen and (max-width:1440px){
+    .hero{
+        &__line-left{
+            left: -140px;
+        }
+
+        &__line-right{
+            left: 550px;
+        }
+    }
+}
+
+@media only screen and(max-width:1211px){
+ .hero{
+     &__line-left{
+         left: -140px;
+     }
+     &__line-right{
+         left: 600px;
+     }
+ }
 }
 
 
