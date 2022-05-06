@@ -1,0 +1,79 @@
+.main-bottom{
+    max-width: 1440px;
+    margin: 0 auto;
+    width:100%;
+    padding: 102px 0;
+    background-image: url("../images/main-bottom-backgraund1x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+    }
+    &__heading{
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+        max-width: 415px;
+    }
+
+    &__link + &__link{
+    margin-left: 18px;
+    }
+}
+@media only screen and (max-width:768px){
+    .main-bottom__container{
+        flex-direction: column;
+    }
+    .main-bottom{
+        background-image: url("../../images/main--bottom-tablet.png");
+    }
+}
+
+@media only screen and(max-width:520px){
+
+    .main-bottom__heading{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .main-bottom{
+     background-image: url("../../images/main--bottom-mobile.png");
+ }
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+   .main-bottom{
+       background-image: url("../images/main-bottom-backgraund2x@2x.png");
+   }
+
+   @media only screen and (max-width:768px){
+       .main-bottom{
+           background-image: url("../../images/main--bottom-tablet2x@2x.png");
+       }
+   }
+
+   @media only screen and(max-width:520px){
+    .main-bottom{
+        background-image: url("../../images/main--bottom-mobile2x@2x.png");
+    }
+}
+}

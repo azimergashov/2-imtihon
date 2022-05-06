@@ -1,0 +1,116 @@
+.footer{
+
+    background-color: #333A44;
+    padding: 32px 0;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left{
+        display: flex;
+        text-align: center;
+    }
+     &__list{
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+    &__logo{
+        margin-right: 20px;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+    }
+
+    &__link:hover{
+        color: white;
+
+    }
+
+    &__link + &__link{
+        margin-left: 24px;
+    }
+
+    &__item + &__item{
+        margin-left: 32px;
+    }
+
+    &__nav-link{
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+    &__nav-link:hover{
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FCB72B;
+        opacity: 0.5;
+        transition: all 0.5s;
+    }
+    &__img:hover path{
+        fill: white;
+
+    }
+
+    &__nav-link:active{
+        opacity: 1;
+        transition: all 0s;
+    }
+}
+
+@media only screen and (max-width:605px){
+    .footer{
+        &__container{
+            text-align: center;
+            flex-direction: column;
+        }
+
+        &__logo{
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        &__nav{
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__nav-link{
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        &__nav-link + &__nav-link{
+            margin-top: 16px;
+        }
+        &__list{
+            text-align: center;
+            flex-direction: column;
+            margin-left: 0px;
+        }
+        &__left{
+            text-align: center;
+            flex-direction: column;
+        }
+
+        &__item{
+            margin: 0;
+            text-align: center;
+        }
+
+        &__right{
+            margin: 0 auto;
+            margin-top: 85px;
+        }
+    }
+}
